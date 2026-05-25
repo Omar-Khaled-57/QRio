@@ -106,7 +106,7 @@ applyLang()
 .logo {
   font-size: var(--fs-md);
   font-weight: 900;
-  color: var(--green);
+  color: var(--green-dark);
   display: flex;
   align-items: center;
   gap: 7px;
@@ -132,15 +132,15 @@ applyLang()
   border-radius: 10px;
   font-size: var(--fs-sm);
   font-weight: 800;
-  color: var(--muted);
+  color: #5f7a86;
   cursor: pointer;
   transition: background .15s, color .15s;
   white-space: nowrap;
   user-select: none;
   display: flex; align-items: center; gap: 5px;
 }
-.nav-link:hover { background: var(--surface2); color: var(--slate); }
-.nav-link.active { background: var(--green-glow); color: var(--green-dark); }
+.nav-link:hover { background: var(--surface2); color: #3a5a6a; }
+.nav-link.active { background: var(--green-glow); color: #167a42; }
 [data-theme="dark"] .nav-link.active { color: var(--green); }
 .nav-center {
   display: contents;

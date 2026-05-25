@@ -9,7 +9,7 @@
 
 :root {
   --green:       #3DC97A;
-  --green-dark:  #28a860;
+  --green-dark:  #167a42;
   --green-glow:  rgba(61,201,122,.18);
   --teal:        #27C9B8;
   --yellow:      #F7C948;
@@ -20,7 +20,7 @@
   --border:      #d4eadd;
   --navy:        #1a2e3b;
   --slate:       #4a5e6a;
-  --muted:       #8fa8b2;
+  --muted:       #617b86;
   --topbar-bg:   #ffffff;
   --topbar-border: #d4eadd;
   --shadow:      0 2px 16px rgba(61,201,122,.10);

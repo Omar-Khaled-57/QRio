@@ -136,7 +136,7 @@
           >
             <div class="fp" :style="frm.style">
               <div v-if="frm.topLabel" class="fp-label-top">{{ frm.topLabel }}</div>
-              <img v-if="placeholderQR" :src="placeholderQR" class="qr-stub" :style="frm.stubStyle" />
+              <img v-if="placeholderQR" :src="placeholderQR" class="qr-stub" :style="frm.stubStyle" alt="" />
               <div v-if="frm.botLabel" class="fp-label-bot">{{ frm.botLabel }}</div>
             </div>
             <div class="frame-label">{{ t('f-' + frm.key) }}</div>

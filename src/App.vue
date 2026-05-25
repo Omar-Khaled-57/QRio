@@ -1,9 +1,11 @@
 <template>
   <NavBar :tab-id="tab" @update:tab-id="tab = $event" />
 
-  <TabCreate v-if="tab === 'create'" />
-  <TabLibrary v-else-if="tab === 'library'" @navigate="tab = $event" />
-  <TabSettings v-else-if="tab === 'settings'" />
+  <main>
+    <TabCreate v-if="tab === 'create'" />
+    <TabLibrary v-else-if="tab === 'library'" @navigate="tab = $event" />
+    <TabSettings v-else-if="tab === 'settings'" />
+  </main>
 
   <Toast />
 </template>

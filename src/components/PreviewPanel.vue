@@ -18,7 +18,7 @@
         </div>
         <div class="qr-body qr-square" :style="{ background: cfg.transparent ? 'transparent' : cfg.bgColor, padding: cfg.quietZone ? '16px' : '0' }">
           <div class="qr-preview-wrap">
-            <img v-if="!hasQr && placeholderUrl" :src="placeholderUrl" class="qr-placeholder-img" />
+            <img v-if="!hasQr && placeholderUrl" :src="placeholderUrl" class="qr-placeholder-img" alt="" />
             <canvas ref="qrCanvas" :width="canvasSize" :height="canvasSize" class="qr-canvas"></canvas>
             <div class="qr-icon-overlay" :style="overlayStyle">
               <svg v-if="cfg.icon === '__logo__'" viewBox="0 0 18 18" fill="none" :style="logoInnerStyle">
