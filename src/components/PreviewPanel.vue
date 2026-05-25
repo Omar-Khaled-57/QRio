@@ -381,7 +381,7 @@ async function exportFullImage(size: number): Promise<string | null> {
 onMounted(async () => {
   renderQR()
   try {
-    placeholderUrl.value = await generateQRDataURL('https://qrio.vercel.app', 'Q', '#1a2e3b', '#ffffff')
+    placeholderUrl.value = await generateQRDataURL('https://q-rio.vercel.app', 'Q', '#1a2e3b', '#ffffff')
   } catch {}
 })
 

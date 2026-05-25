@@ -198,7 +198,7 @@ applyLang()
   .navbar { justify-content: space-between; padding: 0 5vw; }
   .hamburger { display: flex; }
   .nav-center {
-    display: none;
+    display: flex;
     position: fixed;
     inset-block-start: 58px; inset-inline: 0;
     background: var(--topbar-bg);
@@ -208,9 +208,13 @@ applyLang()
     gap: 12px;
     box-shadow: var(--shadow-md);
     z-index: 199;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path .35s ease;
+    pointer-events: none;
   }
   .nav-center.open {
-    display: flex;
+    clip-path: inset(0);
+    pointer-events: auto;
   }
   .nav-center .nav-links {
     flex-direction: column;

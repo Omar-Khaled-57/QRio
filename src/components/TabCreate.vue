@@ -207,7 +207,7 @@ const cfg = config
 const placeholderQR = ref('')
 
 onMounted(async () => {
-  try { placeholderQR.value = await generateQRDataURL('https://qrio.vercel.app', 'Q', '#1a2e3b', '#ffffff', 120) } catch {}
+  try { placeholderQR.value = await generateQRDataURL('https://q-rio.vercel.app', 'Q', '#1a2e3b', '#ffffff', 120) } catch {}
 })
 
 const qrTypes = [
