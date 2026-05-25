@@ -106,7 +106,7 @@ applyLang()
 .logo {
   font-size: var(--fs-md);
   font-weight: 900;
-  color: var(--green-dark);
+  color: var(--green);
   display: flex;
   align-items: center;
   gap: 7px;

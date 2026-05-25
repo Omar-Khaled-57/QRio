@@ -381,7 +381,7 @@ async function exportFullImage(size: number): Promise<string | null> {
 onMounted(async () => {
   renderQR()
   try {
-    placeholderUrl.value = await generateQRDataURL('https://q-rio.vercel.app', 'Q', '#1a2e3b', '#ffffff')
+    placeholderUrl.value = await generateQRDataURL('https://q-rio.vercel.app', 'Q', '#1a2e3b', '#ffffff', 560)
   } catch {}
 })
 
@@ -483,7 +483,7 @@ async function saveToLib() {
   padding: 10px 16px 6px;
   font-size: var(--fs-base);
   font-weight: 900;
-  color: var(--green);
+  color: var(--green-dark);
 }
 .qr-brand svg { width: 20px; height: 20px; }
 .qr-square {

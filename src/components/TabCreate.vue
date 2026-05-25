@@ -73,7 +73,7 @@
       <div class="card">
         <div class="card-title">{{ t('l-icon') }}</div>
         <div class="icon-upload">
-          <input ref="fileInput" type="file" accept="image/*" @change="handleIconUpload" />
+          <input ref="fileInput" type="file" accept="image/*" aria-label="Upload icon image" @change="handleIconUpload" />
           <span style="font-size:18px">📁</span>&nbsp; {{ t('l-uploadlabel') }}
         </div>
         <div style="font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:9px">{{ t('l-or') }}</div>
@@ -431,8 +431,8 @@ const dotOptions = [
   font-weight: 900;
   letter-spacing: .06em;
 }
-.fp-label-top { color: #28a860; }
-.fp-label-bot { color: #28a860; }
+.fp-label-top { color: #167a42; }
+.fp-label-bot { color: #167a42; }
 .qr-stub {
   width: 52%;
   height: auto;
