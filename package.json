@@ -2,6 +2,7 @@
   "name": "qrio",
   "private": true,
   "version": "0.0.0",
+  "author": "Omar Khaled <khaledelkhly57@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",
