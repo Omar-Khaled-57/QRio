@@ -1,9 +1,10 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%233DC97A'/%3E%3Crect x='6' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='26' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='6' y='26' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='30' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='38' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='30' y='38' width='13' height='5' rx='1' fill='white'/%3E%3C/svg%3E">
-  <img src="public/favicon.svg" alt="QRio" width="40" height="40">
-</picture>
-
-# QRio
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%233DC97A'/%3E%3Crect x='6' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='26' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='6' y='26' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='30' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='38' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='30' y='38' width='13' height='5' rx='1' fill='white'/%3E%3C/svg%3E">
+    <img src="public/favicon.svg" alt="QRio" width="40" height="40" style="vertical-align: middle;">
+  </picture>
+  QRio
+</h1>
 
 Create beautiful, customizable QR codes — free, offline, and private.
 
