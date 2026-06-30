@@ -1,33 +1,23 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%233DC97A'/%3E%3Crect x='6' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='26' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='6' y='26' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='30' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='38' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='30' y='38' width='13' height='5' rx='1' fill='white'/%3E%3C/svg%3E">
-    <img src="public/favicon.svg" alt="QRio" width="80" height="80">
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%233DC97A'/%3E%3Crect x='6' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='26' y='6' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='6' y='26' width='16' height='16' rx='3' fill='white'/%3E%3Crect x='30' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='38' y='30' width='5' height='5' rx='1' fill='white'/%3E%3Crect x='30' y='38' width='13' height='5' rx='1' fill='white'/%3E%3C/svg%3E">
+  <img src="public/favicon.svg" alt="QRio" width="40" height="40">
+</picture>
 
-<p align="center">
-  <h1 align="center">QRio</h1>
-</p>
+# QRio
 
-<p align="center">
-  Create beautiful, customizable QR codes — free, offline, and private.
-</p>
+Create beautiful, customizable QR codes — free, offline, and private.
 
-<p align="center">
-  <a href="#features">Features</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#stack">Stack</a> •
-  <a href="#configuration">Configuration</a>
-</p>
+<a href="#features">Features</a> •
+<a href="#getting-started">Getting Started</a> •
+<a href="#usage">Usage</a> •
+<a href="#stack">Stack</a> •
+<a href="#configuration">Configuration</a>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Vue_3-4FC08D?logo=vue.js&logoColor=white" alt="Vue 3">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white" alt="PWA">
-  <img src="https://img.shields.io/badge/i18n-EN_%2F_AR-3DC97A" alt="i18n">
-</p>
+<img src="https://img.shields.io/badge/Vue_3-4FC08D?logo=vue.js&logoColor=white" alt="Vue 3">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" alt="Vite">
+<img src="https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white" alt="PWA">
+<img src="https://img.shields.io/badge/i18n-EN_%2F_AR-3DC97A" alt="i18n">
 
 ---
 
