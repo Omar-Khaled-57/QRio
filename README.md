@@ -14,11 +14,13 @@ Create beautiful, customizable QR codes — free, offline, and private.
 <a href="#stack">Stack</a> •
 <a href="#configuration">Configuration</a>
 
-<img src="https://img.shields.io/badge/Vue_3-4FC08D?logo=vue.js&logoColor=white" alt="Vue 3">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
-<img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" alt="Vite">
-<img src="https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white" alt="PWA">
-<img src="https://img.shields.io/badge/i18n-EN_%2F_AR-3DC97A" alt="i18n">
+<p>
+  <img src="https://img.shields.io/badge/Vue_3-4FC08D?logo=vue.js&logoColor=white" alt="Vue 3">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white" alt="PWA">
+  <img src="https://img.shields.io/badge/i18n-EN_%2F_AR-3DC97A" alt="i18n">
+</p>
 
 ---
 
