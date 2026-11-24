@@ -12,7 +12,8 @@ Create beautiful, customizable QR codes — free, offline, and private.
 <a href="#getting-started">Getting Started</a> •
 <a href="#usage">Usage</a> •
 <a href="#stack">Stack</a> •
-<a href="#configuration">Configuration</a>
+<a href="#configuration">Configuration</a> •
+<a href="docs/README.md">Docs</a>
 
 <p>
   <img src="https://img.shields.io/badge/Vue_3-4FC08D?logo=vue.js&logoColor=white" alt="Vue 3">
@@ -30,16 +31,31 @@ Create beautiful, customizable QR codes — free, offline, and private.
 |---|---|
 | **8 QR Types** | URL, Wi-Fi, vCard, Email, SMS, Location, Text, Payment |
 | **Custom Styles** | Square, Round, Diamond, Hex dot shapes |
-| **Gradients** | Background, QR dots, and frame color gradients |
+| **Color fields** | Background, QR dot, and frame colors are modeled in `QRConfig`; the renderer currently uses the dot color only |
 | **Frames** | Scan Me, Coffee, Dark Badge, Menu, Social — or no frame |
 | **Center Icons** | Upload your logo or pick from 11 preset emojis |
-| **Export** | PNG at 512 / 1024 / 2048 px, copy to clipboard, or print |
-| **SVG Export** | Vector export for lossless scaling |
+| **Export** | PNG only at 512 / 1024 / 2048 px, copy to clipboard, or print — no SVG output |
 | **Library** | Save, browse, edit, and restore QR codes (IndexedDB) |
 | **PWA** | Installable, works offline with service worker caching |
 | **Dark Mode** | Automatic theme toggle with persisted preference |
 | **i18n** | Full English and Arabic (RTL) support |
-| **Privacy** | Everything stays on your device — no servers, no tracking |
+| **Privacy** | QR data and library stay on-device; the page loads Nunito from Google Fonts |
+
+![QRio brand visual](public/logo/og-default.png)
+
+## Visual identity
+
+QRio uses a fresh green brand mark with mint surfaces and teal details. Its
+optional dark mode retains the same green accent on forest-colored surfaces.
+
+| Theme | Canvas / surface | Brand accent |
+|---|---|---|
+| Light | `#f2f8f5` / `#ffffff` | `#3DC97A` |
+| Dark | `#0f1c14` / `#172112` | `#3DC97A` |
+
+The image above is QRio's branded Open Graph visual rather than an app
+screenshot. See the [visual identity guide](docs/visual-identity.md) and theme
+source in [`src/style.css`](src/style.css).
 
 ## Getting Started
 
@@ -83,7 +99,7 @@ Serves the production build locally.
 1. **Pick a QR type** — URL, Wi-Fi, vCard, Email, SMS, Location, Text, or Payment.
 2. **Enter your content** — the form adapts to the selected type.
 3. **Customize the look** — choose colors, gradients, dot style, frame, and center icon.
-4. **Export** — download as PNG or SVG, copy to clipboard, or print.
+4. **Export** — download as PNG (512 / 1024 / 2048 px), copy to clipboard, or print. There is no SVG export.
 
 ### QR Types
 
@@ -143,7 +159,9 @@ The PWA manifest and service worker are configured in `vite.config.ts` via `vite
 
 Audited at **Performance 95% · Accessibility 77% · Best Practices 96% · SEO 82%**
 
-> Lighthouse scores from a recent audit of the production build.
+> Scores from `dev/lighthouse.json`: Lighthouse 13.0.2 against
+> `https://q-rio.vercel.app/`, fetched 2026-05-25T08:10:12.288Z. The `dev/`
+> folder is gitignored, so this is a local snapshot rather than a tracked test.
 
 ## Internationalization
 
@@ -188,6 +206,33 @@ QRio/
 ├── vite.config.ts
 └── opencode.json
 ```
+
+## Documentation
+
+Full project docs are indexed in [`docs/README.md`](docs/README.md): product,
+architecture, development, configuration, testing, deployment, changelog, and
+the [visual identity guide](docs/visual-identity.md).
+
+## Commands
+
+| Script | Command | Purpose |
+| --- | --- | --- |
+| `dev` | `vite` | Start the Vite dev server |
+| `build` | `tsc && vite build` | Type-check and build into `dist/` |
+| `preview` | `vite preview` | Serve the built output locally |
+
+Install with `npm install`. There is no `test`, `lint`, or `format` script.
+
+## Known gaps
+
+- No SVG/vector export; output is PNG only.
+- Color and gradient fields exist in `QRConfig`, but the create form has no
+  color controls and only the QR-dot gradient is honored by the renderer.
+- `index.html` loads Nunito from Google Fonts, so the page makes an external
+  request even though QR data stays on-device.
+- No automated tests or CI; `npm run build` type-checks and bundles but runs no
+  tests. See [testing](docs/testing.md).
+- Local `dev/` artifacts (Lighthouse report, prototype) are gitignored.
 
 ## License
 
